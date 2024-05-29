@@ -9,7 +9,7 @@ header {
     background-color: #1d0e70;
     color: #f4f4f4;
     font-size: 24px;
-    padding: 1rem 0;
+    padding: 10px 0;
     text-align: center;
 }
 footer {
@@ -21,15 +21,80 @@ footer {
     bottom: 0;
     width: 100%;
 }
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* 버튼이 화면을 넘어가면 자동 줄 바꿈 */
+    gap: 6px; /* 버튼 간격 */
+}
 .btn {
     font-size: 24px;
-    padding: 10px 20px;
+    width: 200px;
+    height: 65px;
     border-color: #1d0e70;
     border-radius: 10px;
     cursor: pointer;
     display: inline-block;
     text-align: center;
     transition: all 0.3s ease;
+}
+.btn:hover {
+    background-color: #1d0e70;
+    transform: scale(1.05);
+    color:#f4f4f4
+}
+p.thick {
+    font-weight: bold;
+  }
 
+  /* 숨겨진 체크박스 */
+.modal-toggle {
+    display: none;
 }
 
+/* 모달 스타일 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* 체크박스가 체크되면 모달을 표시 */
+.modal-toggle:checked + .btn + .modal {
+    display: block;
+}
+
+/* 모달 콘텐츠 스타일 */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* 닫기 버튼 스타일 */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #aaa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #000;
+}
+  
