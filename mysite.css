@@ -4,6 +4,7 @@ body {
     padding: 0;
     line-height: 1.6;
     background-color: #f4f4f4;
+    padding-bottom: 50px;
 }
 header {
     background-color: #1d0e70;
@@ -20,6 +21,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 50px;
 }
 .button-container {
     display: flex;
@@ -31,16 +33,19 @@ footer {
     font-size: 24px;
     width: 200px;
     height: 65px;
-    border-color: #1d0e70;
+    border: 2.2px solid #1d0e70;
     border-radius: 10px;
     cursor: pointer;
     display: inline-block;
     text-align: center;
     transition: all 0.3s ease;
+    margin: 0px 6px ;
+    line-height: 65px;
+    
 }
 .btn:hover {
     background-color: #1d0e70;
-    transform: scale(1.05);
+    transform: scale(1.1);
     color:#f4f4f4
 }
 p.thick {
@@ -62,7 +67,8 @@ p.thick {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
 
 /* 체크박스가 체크되면 모달을 표시 */
@@ -72,7 +78,7 @@ p.thick {
 
 /* 모달 콘텐츠 스타일 */
 .modal-content {
-    background-color: #fff;
+    background-color: #f4f4f4;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -85,7 +91,7 @@ p.thick {
 /* 닫기 버튼 스타일 */
 .close-btn {
     position: absolute;
-    top: 10px;
+    top: 0px;
     right: 10px;
     font-size: 24px;
     font-weight: bold;
@@ -95,6 +101,24 @@ p.thick {
 }
 
 .close-btn:hover {
-    color: #000;
+    color: #1d0e70;
 }
-  
+
+/* 각 모달에 대해 체크박스가 체크되면 모달을 표시 */
+#modalToggle1:checked ~ #modal1,
+#modalToggle2:checked ~ #modal2,
+#modalToggle3:checked ~ #modal3,
+#modalToggle4:checked ~ #modal4,
+#modalToggle5:checked ~ #modal5,
+#modalToggle6:checked ~ #modal6,
+#modalToggle7:checked ~ #modal7,
+#modalToggle8:checked ~ #modal8,
+#modalToggle9:checked ~ #modal9,
+#modalToggle10:checked ~ #modal10,
+#modalToggle11:checked ~ #modal11,
+#modalToggle12:checked ~ #modal12,
+#modalToggle13:checked ~ #modal13,
+#modalToggle14:checked ~ #modal14,
+#modalToggle15:checked ~ #modal15{
+    display: block;
+}
