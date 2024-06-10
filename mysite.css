@@ -123,6 +123,11 @@ p.thick {
 #modalToggle12:checked ~ #modal12,
 #modalToggle13:checked ~ #modal13,
 #modalToggle14:checked ~ #modal14,
-#modalToggle15:checked ~ #modal15{
+#modalToggle15:checked ~ #modal15,
+#modalToggle11:checked ~ #modal16,
+#modalToggle12:checked ~ #modal17,
+#modalToggle13:checked ~ #modal18,
+#modalToggle14:checked ~ #modal19,
+#modalToggle15:checked ~ #modal20{
     display: block;
 }
