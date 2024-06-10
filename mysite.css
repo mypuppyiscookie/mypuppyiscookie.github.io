@@ -32,6 +32,7 @@ footer {
     justify-content: center;
     flex-wrap: wrap; /* 버튼이 화면을 넘어가면 자동 줄 바꿈 */
     gap: 6px; /* 버튼 간격 */
+    height: 100%;
 }
 .btn {
     font-size: 24px;
@@ -45,16 +46,12 @@ footer {
     transition: all 0.3s ease;
     margin: 0px 6px ;
     line-height: 65px;
-    
 }
 .btn:hover {
     background-color: #1d0e70;
     transform: scale(1.1);
     color:#f4f4f4
 }
-p.thick {
-    font-weight: bold;
-  }
 
   /* 숨겨진 체크박스 */
 .modal-toggle {
