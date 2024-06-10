@@ -104,6 +104,12 @@ footer {
 .close-btn:hover {
     color: #1d0e70;
 }
+.div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+}
 
 /* 각 모달에 대해 체크박스가 체크되면 모달을 표시 */
 #modalToggle1:checked ~ #modal1,
